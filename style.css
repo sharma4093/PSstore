@@ -12,6 +12,9 @@ body {
   display: flex;
   align-items: center;
   padding: 20px;
+  
+ position:relative;
+ scroll-behavior: smooth;
 }
 
 nav {
@@ -28,21 +31,29 @@ nav ul li {
   display: inline-block;
   margin-right: 30px;
 }
-
-a {
-  text-decoration: none;
-  color: #555;
+nav ul li a:hover{
+  color: red;
+  text-shadow:0 0 5px #f35252e7;
+  /* background-color: red; */
 }
+
+a{
+  text-decoration: none;
+  color: #080101;
+}
+
 
 p {
-  color: #555;
+  color: #f30505;
 }
+
 .container {
   max-width: 1300px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
 }
+
 .row {
   margin-top: 50px;
   display: flex;
@@ -55,19 +66,22 @@ p {
   flex-basis: 50%;
   min-width: 300px;
 }
+
 .col-2 img {
   max-width: 100%;
   padding: 50px 0;
   /* top and bottom 50 left and right 0 */
 }
+
 .col-2 h1 {
   font-size: 50px;
   line-height: 60px;
   margin: 25px 0;
 }
+
 .btn {
   display: inline-block;
-  background: #ff523b;
+  background: #87473f;
   color: #fff;
   padding: 8px 30px;
   margin: 30px 0;
@@ -76,8 +90,9 @@ p {
 }
 
 .btn:hover {
-  background-color: #563434; /* Green */
-  color: #fff;
+  background-color: #e61515; /* Green */
+ 
+  box-shadow: 0px 0px 5px 1px red;
 }
 
 .header {
@@ -100,6 +115,12 @@ p {
 
 .col-3 img {
   width: 100%;
+}
+
+.col-3 a p:hover{
+  color: rgb(15, 9, 9);
+  font-size: larger;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .small-container {
@@ -126,7 +147,7 @@ p {
   margin: 0 auto 80px;
   position: relative;
   line-height: 60px;
-  color: #555;
+  color: #8c2727;
 }
 
 .title::after {
@@ -221,26 +242,26 @@ small {
 }
 .col-5 img {
   width: 100%;
-  cursor: pointer;
   filter: grayscale(100%);
 }
 
 .col-5 img:hover {
   filter: grayscale(0);
+
 }
 
 /* footer */
 .footer {
-  background: #000;
-  color: #8a8a8a;
+  color: #000;
+  background: #832323d4;
   font-size: 14px;
   padding: 60px 0 20px;
 }
 .footer p {
-  color: #8a8a8a;
+  color: #050000;
 }
 .footer h3 {
-  color: #fff;
+  color: #0a0000;
   margin-bottom: 20px;
 }
 .footer-col-1,
@@ -249,6 +270,12 @@ small {
 .footer-col-4 {
   min-width: 250px;
   margin-bottom: 20px;
+}
+.footer-col-4 ul li a:hover{
+  color: rgba(247, 5, 5, 0.963);
+  font-size: large;
+  text-shadow: 0px 0px 8px rgb(246, 242, 242);
+
 }
 
 .footer-col-1 {
@@ -278,14 +305,23 @@ ul {
   width: 140px;
 }
 
+
 .footer hr {
   border: none;
-  background: #b5b5b5;
+  background: #fffdfd;
   height: 1px;
   margin: 20px 0;
 }
 .copyright {
+  font-size: 20px;
   text-align: center;
+  /* color: rgb(196, 21, 21); */
+  
+}
+.copyright:hover{
+  font-size: 25px;
+  text-shadow: 0px 0px 9px rgb(255, 255, 255);
+
 }
 .menu-icon {
   width: 28px;
